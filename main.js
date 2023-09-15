@@ -13,13 +13,10 @@
 - the time also has to be updated live - not just logged and stamped
 - need a function for setting the alarm
 - need a way to set off the alarm... an alert?
--
--
-
 
 */
 
-
+/*
 function getTime() {
     const now = new Date()
     const seconds = now.getSeconds()
@@ -29,3 +26,20 @@ function getTime() {
 }
 
 setInterval(getTime, 100)
+*/
+
+function updateTime(){
+    const dateTime = newDate();
+// this should update the time div - newDate will hold the current time
+}
+
+    //here I need to set my variables and use the date object + methods to obtain the current time
+    let hour = dateTime.getHours();
+    // get current hour from 0-23
+    let min = dateTime.getMinutes();
+    // get current minute from 0-59
+    let sec = dateTime.getSeconds();
+    // get current seconds from 0-59
+
+    //here I  need to store the date object of the alarm time that the user sets (null is like the temporary value)
+    let alarmSet = null;
