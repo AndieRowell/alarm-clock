@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://images4.alphacoders.com/107/1070479.png");
+    background-color: blanchedalmond;
+    color:aliceblue
+    padding-top: 200px;
+
+}
+
+.container{
+    font-family:monospace
+    display: flex;
+    justify-content: center;
+}
+
+.clock{
+    font-size: 2em;
+}
