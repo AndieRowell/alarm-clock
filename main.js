@@ -108,3 +108,4 @@ if (hour === alarmHour && min === alarmMinute) {
 - or actually the toLocaleTimeString() date method -- this one returns a string with a representation of just the time portion of the date...
     - mdn source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString
 -
+*/
