@@ -70,3 +70,10 @@ function checkTime(i){
     if (i < 10) {i ="0" + i};
     return i;
 }
+
+// this is the function needed to set the alarm time
+// this should recieve the set alarm time value selected by the user and then assign that value to alarmSet that we established earlier
+function setAlarmTime(value){
+    alarmSet = value;
+    console.log(alarmSet)
+}
