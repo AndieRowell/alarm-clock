@@ -28,8 +28,8 @@ function getTime() {
 setInterval(getTime, 100)
 */
 
-//do i add the onload here?
-window.onload = updateTime;
+//do i add the onload here? - still confused by this - come back later
+//window.onload = updateTime;
 
 //create the main function
 function updateTime(){
@@ -83,3 +83,28 @@ function setAlarmTime(value){
 
 
 //now I need a function to make an alert after it matches the alarm time
+// this should probably be within the update time function?
+/*
+    if i were to start to pseudocode that function maybe needs to be something like...
+    if the alarmSet value is equal to the current time (newDate) then it should return an alert
+        - i might need to add else - do not set off an alert?
+*/
+
+/*
+if (dateTime === alarmSet){
+    alert("Wake up!!!");
+
+}
+
+or try something like...
+
+if (hour === alarmHour && min === alarmMinute) {
+    alert("Wake up!!!");
+}
+
+
+**** extra notes while searching:
+- date.toLocaleString - this could give me the localized date and time
+- or actually the toLocaleTimeString() date method -- this one returns a string with a representation of just the time portion of the date...
+    - mdn source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString
+-
