@@ -56,3 +56,17 @@ function updateTime(){
     document.getElementById("seconds").innerHTML = sec;
 
 }
+
+
+// need to add this to update the time in 1 second intervals - so the main updateTime function will run every second
+// otherwise the time will be frozen...
+// mdn - "...this method ... repeatedly calls a function or executes a code snippet, with a fixed time delay between each call"
+// example format: setInterval(function, delay)
+// delay - the time in milliseconds the timer should delay in between executions of the function (otherwise default to 0)
+setInterval(updateTime, 1000)
+
+// this function is added to fix the time elements as by default they will show only one digit, we need two for a normal clock
+function checkTime(i){
+    if (i < 10) {i ="0" + i};
+    return i;
+}
