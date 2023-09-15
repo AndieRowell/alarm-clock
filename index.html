@@ -8,8 +8,23 @@
     <!-- this connects the css to the html-->
 </head>
 <body>
-    <div class="clock">
+    <h1 style="text-align:center;">Hello World!</h1>"
 
+    <div id ="alarmClock"></div>
+
+    <div class="container">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds"></span>
+    <!-- displayed time inline-->
+
+        <input type="time" id="alarmSet">
+        <!-- input selector box for alarm time -->
+
+        <button onClick="setAlarmTime(this.value)" class"button set-alarm">Set Alarm</button>
+        <!-- button for setting the alarm - calls to setAlarmTime function when clicked (click event listener)-->
 
     </div>
 
