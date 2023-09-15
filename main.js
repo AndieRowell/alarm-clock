@@ -28,10 +28,11 @@ function getTime() {
 setInterval(getTime, 100)
 */
 
+//create the main function
 function updateTime(){
     const dateTime = newDate();
 // this should update the time div - newDate will hold the current time
-}
+
 
     //here I need to set my variables and use the date object + methods to obtain the current time
     let hour = dateTime.getHours();
@@ -43,3 +44,15 @@ function updateTime(){
 
     //here I  need to store the date object of the alarm time that the user sets (null is like the temporary value)
     let alarmSet = null;
+
+
+    hour = checkTime(hour);
+    min = checkTime(min);
+    sec = checkTime(sec);
+
+    // this will change the corresponding text in the html file
+    document.getElementById("hours").innerHTML = hour;
+    document.getElementById("minutes").innerHTML = min;
+    document.getElementById("seconds").innerHTML = sec;
+
+}
