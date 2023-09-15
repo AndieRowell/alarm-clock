@@ -28,9 +28,12 @@ function getTime() {
 setInterval(getTime, 100)
 */
 
+//do i add the onload here?
+window.onload = updateTime;
+
 //create the main function
 function updateTime(){
-    const dateTime = newDate();
+    const dateTime = new Date();
 // this should update the time div - newDate will hold the current time
 
 
@@ -77,3 +80,6 @@ function setAlarmTime(value){
     alarmSet = value;
     console.log(alarmSet)
 }
+
+
+//now I need a function to make an alert after it matches the alarm time
