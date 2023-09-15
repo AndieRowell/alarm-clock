@@ -11,7 +11,8 @@
 - store the date object of the alarm time that gets set
 - a way to update/load? the time/text in the linked html file to display it
 - the time also has to be updated live - not just logged and stamped
--
+- need a function for setting the alarm
+- need a way to set off the alarm... an alert?
 -
 -
 
